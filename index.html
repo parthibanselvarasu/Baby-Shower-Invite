@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=1024, initial-scale=1.0"/>
   <title>Baby Shower Invitation – Parthiban & Amutha</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
   <style>
@@ -26,9 +26,10 @@
       --small-card-glass: 0.14;
     }
 
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; min-width: 1024px; }
 
     body {
+      min-width: 1024px;
       min-height: 100vh;
       background: linear-gradient(160deg,
         rgba(209,250,229,0.62) 0%,
@@ -433,7 +434,7 @@
  #sparkles { position: fixed; z-index: 7; }
  .card-wrapper { position: relative; z-index: 6; }
  .card { position: relative; z-index: 6; }
- @media(max-width:520px){
+ @media(max-width:0px){
  .video-bg{
  width: var(--video-mobile-width, 96vw);       /* Adjust mobile video width here */
  height: var(--video-mobile-height, 330px);    /* Adjust mobile video height here */
@@ -498,7 +499,7 @@
  }
 
  /* ─── RESPONSIVE ─── */
-    @media(max-width:520px){
+    @media(max-width:0px){
       .card{padding:36px 20px 36px;}
       .info-grid{grid-template-columns:1fr;}
       .families-grid{grid-template-columns:1fr;}
