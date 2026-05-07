@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=1024, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Baby Shower Invitation – Parthiban & Amutha</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
   <style>
@@ -26,10 +26,9 @@
       --small-card-glass: 0.14;
     }
 
-    html { scroll-behavior: smooth; min-width: 1024px; }
+    html { scroll-behavior: smooth; }
 
     body {
-      min-width: 1024px;
       min-height: 100vh;
       background: linear-gradient(160deg,
         rgba(209,250,229,0.62) 0%,
@@ -208,15 +207,15 @@
     /* ─── INFO GRID ─── */
     .info-grid {
       display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:16px;
+      grid-template-columns:repeat(3, 1fr);
+      gap:14px;
       margin-bottom:28px;
       animation:fadeUp 1s 1.0s both;
     }
     .info-card {
       background:rgba(255,255,255,var(--small-card-glass));
       border-radius:18px;
-      padding:22px 16px;
+      padding:20px 10px;
       text-align:center;
       transition:transform 0.3s, box-shadow 0.3s;
       cursor:default;
@@ -434,7 +433,7 @@
  #sparkles { position: fixed; z-index: 7; }
  .card-wrapper { position: relative; z-index: 6; }
  .card { position: relative; z-index: 6; }
- @media(max-width:0px){
+ @media(max-width:520px){
  .video-bg{
  width: var(--video-mobile-width, 96vw);       /* Adjust mobile video width here */
  height: var(--video-mobile-height, 330px);    /* Adjust mobile video height here */
@@ -499,9 +498,9 @@
  }
 
  /* ─── RESPONSIVE ─── */
-    @media(max-width:0px){
+    @media(max-width:520px){
       .card{padding:36px 20px 36px;}
-      .info-grid{grid-template-columns:1fr;}
+      .info-grid{grid-template-columns:repeat(3, 1fr);}
       .families-grid{grid-template-columns:1fr;}
       .countdown-boxes{gap:8px;}
       .cd-box{min-width:52px; padding:10px 10px;}
@@ -543,9 +542,8 @@
     <!-- Honouring -->
     <div class="honour-box">
       <p class="honour-label">🌿 Our Love Multiplied 🌿</p>
-      <span class="heart-pulse">💙</span>
+      <span class="heart-pulse">💙🩷</span>
       <div class="honour-names">Parthiban &amp; Amutha</div>
-      <span class="heart-pulse">🩷</span>
     </div>
 
     <!-- Info Grid -->
@@ -560,7 +558,7 @@
         <p class="info-label">Time</p>
         <p class="info-value">9:30 AM<br/>to 10:30 AM</p>
       </div>
-      <div class="info-card" style="grid-column:1/-1;">
+      <div class="info-card">
         <span class="info-icon">📍</span>
         <p class="info-label">Venue</p>
         <p class="info-value">Serugudi</p>
@@ -575,11 +573,11 @@
       <div class="families-grid">
         <div class="family-card">
           <div class="family-icon">👨‍👩‍👧</div>
-          <div class="family-couple">Selvaraj. T<br/>&amp; Saraswathi. S</div>
+          <div class="family-couple">Selvaraj. T &amp; Saraswathi. S</div>
         </div>
         <div class="family-card">
           <div class="family-icon">👨‍👩‍👦</div>
-          <div class="family-couple">Vadivazhagan. N<br/>&amp; Sagunthala. V</div>
+          <div class="family-couple">Vadivazhagan. N &amp; Sagunthala. V</div>
         </div>
       </div>
     </div>
